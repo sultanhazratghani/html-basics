@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>error handler</title>
+    <script language="javascript">
+        window.onerror=displaySorry
+        function displaySorry(message, url, line){
+            var msg="Ther has been a scripting error.\n"
+            msg +="Please contact bugs@bigcompany,com\n";
+            msg +="Referance file:"+ url
+            alert(msg);
+            return true;
+        }
+    </script>
+</head>
+<body>
+    <input type="button" ondblclick="script" value="singleClickButton"> double click <br><hr>
+    <input type="button" onclick="script" value="singleClickButton"> single click
+</body>
+</html>

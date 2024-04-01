@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function validDate(){
+        if (document.myform.username.value == ""){
+            alert('please enter your name');
+        }
+        else{
+            alert(`you entered ${document.myform.username.value}`)
+        }
+    }
+</script>
+<body>
+    <div id="main">
+<form name="myform" action="cgi-bin/dosomething.pl" method="post"> 
+    <b>name:</b>
+    <input type="text" name="username" size="25" maxlength="25"><br><br>
+    <input type="button" value="check name" onclick="validDate()">
+</form>
+</div>
+    
+</body>
+</html>
